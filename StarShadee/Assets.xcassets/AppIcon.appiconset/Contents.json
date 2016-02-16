@@ -3,79 +3,79 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "logo_1_29.png",
+      "filename" : "logo_1_120-10.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "logo_1_29-1.png",
+      "filename" : "logo_1_120-11.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "logo_1_40.png",
+      "filename" : "logo_1_120-8.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "logo_1_40-1.png",
+      "filename" : "logo_1_120-9.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "logo_1-1.png",
+      "filename" : "logo_1_120.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "logo_1.png",
+      "filename" : "logo_1_120-1.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "logo_1_29-2.png",
+      "filename" : "logo_1_120-2.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "logo_1_29-3.png",
+      "filename" : "logo_1_120-3.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "logo_1_40-2.png",
+      "filename" : "logo_1_120-6.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "logo_1_40-3.png",
+      "filename" : "logo_1_120-7.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "logo_1_76.png",
+      "filename" : "logo_1_120-5.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "logo_1_76-1.png",
+      "filename" : "logo_1_120-4.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "logo_1_83.png",
+      "filename" : "logo_1_180.png",
       "scale" : "2x"
     }
   ],
