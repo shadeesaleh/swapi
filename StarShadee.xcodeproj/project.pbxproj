@@ -26,6 +26,9 @@
 		28DC1CF91C731B6A00E5813E /* StarshipsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1CF81C731B6A00E5813E /* StarshipsView.xib */; };
 		28DC1CFB1C731B7400E5813E /* VehiclesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1CFA1C731B7400E5813E /* VehiclesView.xib */; };
 		28DC1CFD1C731F8700E5813E /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1CFC1C731F8700E5813E /* TabViewController.swift */; };
+		28DC1D011C73993300E5813E /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D001C73993300E5813E /* FilmTableViewCell.swift */; };
+		28DC1D031C7399F400E5813E /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D021C7399F400E5813E /* Film.swift */; };
+		28DC1D0B1C73B0AB00E5813E /* FilmsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D0A1C73B0AB00E5813E /* FilmsTableViewCell.xib */; };
 		B216696089A2F0A383F8136B /* Pods_StarShadee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F28D7FE30F7B76B89EE573 /* Pods_StarShadee.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,10 @@
 		28DC1CF81C731B6A00E5813E /* StarshipsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StarshipsView.xib; path = views/StarshipsView.xib; sourceTree = "<group>"; };
 		28DC1CFA1C731B7400E5813E /* VehiclesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehiclesView.xib; sourceTree = "<group>"; };
 		28DC1CFC1C731F8700E5813E /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabViewController.swift; path = controllers/TabViewController.swift; sourceTree = "<group>"; };
+		28DC1D001C73993300E5813E /* FilmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilmTableViewCell.swift; path = controllers/cells/FilmTableViewCell.swift; sourceTree = "<group>"; };
+		28DC1D021C7399F400E5813E /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Film.swift; path = models/Film.swift; sourceTree = "<group>"; };
+		28DC1D091C739EB800E5813E /* StarShadee-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StarShadee-Bridging-Header.h"; path = "utilities/StarShadee-Bridging-Header.h"; sourceTree = "<group>"; };
+		28DC1D0A1C73B0AB00E5813E /* FilmsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilmsTableViewCell.xib; path = views/cells/FilmsTableViewCell.xib; sourceTree = "<group>"; };
 		6C2C747E7171377B5036C2A1 /* Pods-StarShadee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarShadee.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarShadee/Pods-StarShadee.release.xcconfig"; sourceTree = "<group>"; };
 		B0F28D7FE30F7B76B89EE573 /* Pods_StarShadee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarShadee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F168D47E8A94B00E3CEA019F /* Pods-StarShadee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarShadee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarShadee/Pods-StarShadee.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +178,7 @@
 		28DC1CDF1C73067900E5813E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				28DC1CFE1C73967F00E5813E /* Cells */,
 				28DC1CE41C7306FC00E5813E /* FilmsView.xib */,
 				28DC1CF21C731B3F00E5813E /* PeopleView.xib */,
 				28DC1CF41C731B4D00E5813E /* PlanetsView.xib */,
@@ -184,6 +192,7 @@
 		28DC1CE01C73067B00E5813E /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				28DC1CFF1C73990800E5813E /* Cells */,
 				28DC1CE61C73071100E5813E /* FilmsViewController.swift */,
 				28DC1CE81C730A8100E5813E /* PeopleViewController.swift */,
 				28DC1CEA1C730A9200E5813E /* PlanetsViewController.swift */,
@@ -198,6 +207,7 @@
 		28DC1CE11C73067D00E5813E /* models */ = {
 			isa = PBXGroup;
 			children = (
+				28DC1D021C7399F400E5813E /* Film.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -205,6 +215,7 @@
 		28DC1CE21C73068D00E5813E /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				28DC1D091C739EB800E5813E /* StarShadee-Bridging-Header.h */,
 			);
 			name = utilities;
 			sourceTree = "<group>";
@@ -214,6 +225,22 @@
 			children = (
 			);
 			name = libraries;
+			sourceTree = "<group>";
+		};
+		28DC1CFE1C73967F00E5813E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				28DC1D0A1C73B0AB00E5813E /* FilmsTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		28DC1CFF1C73990800E5813E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				28DC1D001C73993300E5813E /* FilmTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		3F8B07ED0BDB6A7002B99315 /* Pods */ = {
@@ -339,6 +366,7 @@
 				28DC1CF31C731B3F00E5813E /* PeopleView.xib in Resources */,
 				28DC1CF71C731B5C00E5813E /* SpeciesView.xib in Resources */,
 				28DC1CB91C7302F800E5813E /* Assets.xcassets in Resources */,
+				28DC1D0B1C73B0AB00E5813E /* FilmsTableViewCell.xib in Resources */,
 				28DC1CF91C731B6A00E5813E /* StarshipsView.xib in Resources */,
 				28DC1CB71C7302F800E5813E /* Main.storyboard in Resources */,
 			);
@@ -418,7 +446,9 @@
 				28DC1CE91C730A8100E5813E /* PeopleViewController.swift in Sources */,
 				28DC1CED1C730A9F00E5813E /* SpeciesViewController.swift in Sources */,
 				28DC1CEB1C730A9200E5813E /* PlanetsViewController.swift in Sources */,
+				28DC1D031C7399F400E5813E /* Film.swift in Sources */,
 				28DC1CB01C7302F800E5813E /* AppDelegate.swift in Sources */,
+				28DC1D011C73993300E5813E /* FilmTableViewCell.swift in Sources */,
 				28DC1CE71C73071100E5813E /* FilmsViewController.swift in Sources */,
 				28DC1CFD1C731F8700E5813E /* TabViewController.swift in Sources */,
 			);
@@ -563,10 +593,13 @@
 			baseConfigurationReference = F168D47E8A94B00E3CEA019F /* Pods-StarShadee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = StarShadee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SS.StarShadee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarShadee/utilities/StarShadee-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -575,10 +608,12 @@
 			baseConfigurationReference = 6C2C747E7171377B5036C2A1 /* Pods-StarShadee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = StarShadee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SS.StarShadee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StarShadee/utilities/StarShadee-Bridging-Header.h";
 			};
 			name = Release;
 		};
