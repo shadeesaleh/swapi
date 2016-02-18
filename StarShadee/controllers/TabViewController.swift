@@ -37,12 +37,12 @@ class TabViewController: UITabBarController {
     let vehiclesVC = VehiclesViewController()
     
     // include in the tabs
-    let viewControllers:[UIViewController] = [filmsVC, peopleVC, starshipsVC,vehiclesVC, planetsVC, speciesVC]
+    let viewControllers:[UIViewController] = [ peopleVC, filmsVC, starshipsVC,vehiclesVC, planetsVC, speciesVC]
     self.setViewControllers(viewControllers, animated: true)
     
     // Tab Bar Iteams for the View Controllers
     filmsVC.tabBarItem = UITabBarItem(title: "Films", image: UIImage(named:"tab_films"), selectedImage: UIImage(named:"tab_films"))
-    peopleVC.tabBarItem = UITabBarItem(title: "People", image: UIImage(named:"tab_people"), selectedImage: UIImage(named:"tab_people"))
+    peopleVC.tabBarItem = UITabBarItem(title: "Characters", image: UIImage(named:"tab_people"), selectedImage: UIImage(named:"tab_people"))
     planetsVC.tabBarItem = UITabBarItem(title: "Planets", image: UIImage(named:"tab_planets"), selectedImage: UIImage(named:"tab_planets"))
     speciesVC.tabBarItem = UITabBarItem(title: "Species", image: UIImage(named:"tab_species"), selectedImage: UIImage(named:"tab_species"))
     starshipsVC.tabBarItem = UITabBarItem(title: "Starships", image: UIImage(named:"tab_starships"), selectedImage: UIImage(named:"tab_starships"))

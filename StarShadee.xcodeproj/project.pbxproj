@@ -24,7 +24,6 @@
 		28DC1D2C1C75AFAD00E5813E /* SpeciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D2B1C75AFAD00E5813E /* SpeciesViewController.swift */; };
 		28DC1D2E1C75AFB100E5813E /* StarshipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D2D1C75AFB100E5813E /* StarshipsViewController.swift */; };
 		28DC1D301C75AFB600E5813E /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D2F1C75AFB600E5813E /* VehiclesViewController.swift */; };
-		28DC1D321C75AFD400E5813E /* PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D311C75AFD400E5813E /* PeopleView.xib */; };
 		28DC1D341C75AFD900E5813E /* PlanetsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D331C75AFD900E5813E /* PlanetsView.xib */; };
 		28DC1D361C75AFE400E5813E /* SpeciesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D351C75AFE400E5813E /* SpeciesView.xib */; };
 		28DC1D381C75AFEA00E5813E /* StarshipsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D371C75AFEA00E5813E /* StarshipsView.xib */; };
@@ -32,6 +31,18 @@
 		28DC1D3E1C75B00900E5813E /* FilmDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D3B1C75B00900E5813E /* FilmDetailsView.xib */; };
 		28DC1D3F1C75B00900E5813E /* FilmsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D3C1C75B00900E5813E /* FilmsView.xib */; };
 		28DC1D401C75B00900E5813E /* FilmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D3D1C75B00900E5813E /* FilmTableViewCell.xib */; };
+		28DC1D441C75B56500E5813E /* PeopleDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D411C75B56500E5813E /* PeopleDetailsView.xib */; };
+		28DC1D451C75B56500E5813E /* PeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D421C75B56500E5813E /* PeopleTableViewCell.xib */; };
+		28DC1D461C75B56500E5813E /* PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DC1D431C75B56500E5813E /* PeopleView.xib */; };
+		28DC1D481C75B5DE00E5813E /* PlanetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D471C75B5DE00E5813E /* PlanetTableViewCell.swift */; };
+		28DC1D4A1C75B5EB00E5813E /* SpeciesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D491C75B5EB00E5813E /* SpeciesTableViewCell.swift */; };
+		28DC1D4C1C75B5F900E5813E /* StarshipsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D4B1C75B5F900E5813E /* StarshipsTableViewCell.swift */; };
+		28DC1D4E1C75B60700E5813E /* VehiclesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D4D1C75B60700E5813E /* VehiclesTableViewCell.swift */; };
+		28DC1D501C75B63400E5813E /* PeopleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D4F1C75B63400E5813E /* PeopleDetailsViewController.swift */; };
+		28DC1D521C75B64A00E5813E /* PlanetsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D511C75B64A00E5813E /* PlanetsDetailsViewController.swift */; };
+		28DC1D541C75B65900E5813E /* SpeciesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D531C75B65900E5813E /* SpeciesDetailsViewController.swift */; };
+		28DC1D571C75B66B00E5813E /* StarshipsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D561C75B66B00E5813E /* StarshipsDetailsViewController.swift */; };
+		28DC1D591C75B67B00E5813E /* VehiclesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC1D581C75B67B00E5813E /* VehiclesDetailViewController.swift */; };
 		B216696089A2F0A383F8136B /* Pods_StarShadee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F28D7FE30F7B76B89EE573 /* Pods_StarShadee.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +88,6 @@
 		28DC1D2B1C75AFAD00E5813E /* SpeciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeciesViewController.swift; path = controllers/Species/SpeciesViewController.swift; sourceTree = "<group>"; };
 		28DC1D2D1C75AFB100E5813E /* StarshipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarshipsViewController.swift; path = controllers/Starships/StarshipsViewController.swift; sourceTree = "<group>"; };
 		28DC1D2F1C75AFB600E5813E /* VehiclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehiclesViewController.swift; path = controllers/Vehicles/VehiclesViewController.swift; sourceTree = "<group>"; };
-		28DC1D311C75AFD400E5813E /* PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PeopleView.xib; path = views/People/PeopleView.xib; sourceTree = "<group>"; };
 		28DC1D331C75AFD900E5813E /* PlanetsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlanetsView.xib; path = views/Planets/PlanetsView.xib; sourceTree = "<group>"; };
 		28DC1D351C75AFE400E5813E /* SpeciesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SpeciesView.xib; path = views/Species/SpeciesView.xib; sourceTree = "<group>"; };
 		28DC1D371C75AFEA00E5813E /* StarshipsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StarshipsView.xib; path = views/Starships/StarshipsView.xib; sourceTree = "<group>"; };
@@ -85,6 +95,18 @@
 		28DC1D3B1C75B00900E5813E /* FilmDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilmDetailsView.xib; path = views/Film/FilmDetailsView.xib; sourceTree = "<group>"; };
 		28DC1D3C1C75B00900E5813E /* FilmsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilmsView.xib; path = views/Film/FilmsView.xib; sourceTree = "<group>"; };
 		28DC1D3D1C75B00900E5813E /* FilmTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilmTableViewCell.xib; path = views/Film/FilmTableViewCell.xib; sourceTree = "<group>"; };
+		28DC1D411C75B56500E5813E /* PeopleDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PeopleDetailsView.xib; path = views/People/PeopleDetailsView.xib; sourceTree = "<group>"; };
+		28DC1D421C75B56500E5813E /* PeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PeopleTableViewCell.xib; path = views/People/PeopleTableViewCell.xib; sourceTree = "<group>"; };
+		28DC1D431C75B56500E5813E /* PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PeopleView.xib; path = views/People/PeopleView.xib; sourceTree = "<group>"; };
+		28DC1D471C75B5DE00E5813E /* PlanetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanetTableViewCell.swift; path = controllers/Planets/PlanetTableViewCell.swift; sourceTree = "<group>"; };
+		28DC1D491C75B5EB00E5813E /* SpeciesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeciesTableViewCell.swift; path = controllers/Species/SpeciesTableViewCell.swift; sourceTree = "<group>"; };
+		28DC1D4B1C75B5F900E5813E /* StarshipsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarshipsTableViewCell.swift; path = controllers/Starships/StarshipsTableViewCell.swift; sourceTree = "<group>"; };
+		28DC1D4D1C75B60700E5813E /* VehiclesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehiclesTableViewCell.swift; path = controllers/Vehicles/VehiclesTableViewCell.swift; sourceTree = "<group>"; };
+		28DC1D4F1C75B63400E5813E /* PeopleDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleDetailsViewController.swift; path = controllers/People/PeopleDetailsViewController.swift; sourceTree = "<group>"; };
+		28DC1D511C75B64A00E5813E /* PlanetsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanetsDetailsViewController.swift; path = controllers/Planets/PlanetsDetailsViewController.swift; sourceTree = "<group>"; };
+		28DC1D531C75B65900E5813E /* SpeciesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeciesDetailsViewController.swift; path = controllers/Species/SpeciesDetailsViewController.swift; sourceTree = "<group>"; };
+		28DC1D561C75B66B00E5813E /* StarshipsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarshipsDetailsViewController.swift; path = controllers/Starships/StarshipsDetailsViewController.swift; sourceTree = "<group>"; };
+		28DC1D581C75B67B00E5813E /* VehiclesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehiclesDetailViewController.swift; path = controllers/Vehicles/VehiclesDetailViewController.swift; sourceTree = "<group>"; };
 		6C2C747E7171377B5036C2A1 /* Pods-StarShadee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarShadee.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarShadee/Pods-StarShadee.release.xcconfig"; sourceTree = "<group>"; };
 		B0F28D7FE30F7B76B89EE573 /* Pods_StarShadee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarShadee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F168D47E8A94B00E3CEA019F /* Pods-StarShadee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarShadee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarShadee/Pods-StarShadee.debug.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +268,7 @@
 			children = (
 				28DC1D1F1C75AC6100E5813E /* PeopleTableViewCell.swift */,
 				28DC1D201C75AC6100E5813E /* PeopleViewController.swift */,
+				28DC1D4F1C75B63400E5813E /* PeopleDetailsViewController.swift */,
 			);
 			name = People;
 			sourceTree = "<group>";
@@ -254,6 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				28DC1D291C75AFA800E5813E /* PlanetsViewController.swift */,
+				28DC1D471C75B5DE00E5813E /* PlanetTableViewCell.swift */,
+				28DC1D511C75B64A00E5813E /* PlanetsDetailsViewController.swift */,
 			);
 			name = Planets;
 			sourceTree = "<group>";
@@ -262,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				28DC1D2B1C75AFAD00E5813E /* SpeciesViewController.swift */,
+				28DC1D491C75B5EB00E5813E /* SpeciesTableViewCell.swift */,
+				28DC1D531C75B65900E5813E /* SpeciesDetailsViewController.swift */,
 			);
 			name = Species;
 			sourceTree = "<group>";
@@ -270,6 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				28DC1D2D1C75AFB100E5813E /* StarshipsViewController.swift */,
+				28DC1D4B1C75B5F900E5813E /* StarshipsTableViewCell.swift */,
+				28DC1D561C75B66B00E5813E /* StarshipsDetailsViewController.swift */,
 			);
 			name = Starships;
 			sourceTree = "<group>";
@@ -278,6 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				28DC1D2F1C75AFB600E5813E /* VehiclesViewController.swift */,
+				28DC1D4D1C75B60700E5813E /* VehiclesTableViewCell.swift */,
+				28DC1D581C75B67B00E5813E /* VehiclesDetailViewController.swift */,
 			);
 			name = Vehicles;
 			sourceTree = "<group>";
@@ -295,7 +326,9 @@
 		28DC1D241C75AC8500E5813E /* People */ = {
 			isa = PBXGroup;
 			children = (
-				28DC1D311C75AFD400E5813E /* PeopleView.xib */,
+				28DC1D411C75B56500E5813E /* PeopleDetailsView.xib */,
+				28DC1D421C75B56500E5813E /* PeopleTableViewCell.xib */,
+				28DC1D431C75B56500E5813E /* PeopleView.xib */,
 			);
 			name = People;
 			sourceTree = "<group>";
@@ -448,11 +481,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28DC1D321C75AFD400E5813E /* PeopleView.xib in Resources */,
 				28DC1D381C75AFEA00E5813E /* StarshipsView.xib in Resources */,
 				28DC1D361C75AFE400E5813E /* SpeciesView.xib in Resources */,
 				28DC1CBC1C7302F800E5813E /* LaunchScreen.storyboard in Resources */,
+				28DC1D441C75B56500E5813E /* PeopleDetailsView.xib in Resources */,
+				28DC1D461C75B56500E5813E /* PeopleView.xib in Resources */,
 				28DC1D3F1C75B00900E5813E /* FilmsView.xib in Resources */,
+				28DC1D451C75B56500E5813E /* PeopleTableViewCell.xib in Resources */,
 				28DC1CB91C7302F800E5813E /* Assets.xcassets in Resources */,
 				28DC1D341C75AFD900E5813E /* PlanetsView.xib in Resources */,
 				28DC1CB71C7302F800E5813E /* Main.storyboard in Resources */,
@@ -531,15 +566,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DC1D4A1C75B5EB00E5813E /* SpeciesTableViewCell.swift in Sources */,
+				28DC1D4C1C75B5F900E5813E /* StarshipsTableViewCell.swift in Sources */,
 				28DC1D031C7399F400E5813E /* Film.swift in Sources */,
 				28DC1D221C75AC6100E5813E /* PeopleViewController.swift in Sources */,
 				28DC1D2A1C75AFA800E5813E /* PlanetsViewController.swift in Sources */,
 				28DC1D2C1C75AFAD00E5813E /* SpeciesViewController.swift in Sources */,
 				28DC1CB01C7302F800E5813E /* AppDelegate.swift in Sources */,
+				28DC1D541C75B65900E5813E /* SpeciesDetailsViewController.swift in Sources */,
 				28DC1D1D1C75AC5400E5813E /* FilmsViewController.swift in Sources */,
+				28DC1D571C75B66B00E5813E /* StarshipsDetailsViewController.swift in Sources */,
 				28DC1CFD1C731F8700E5813E /* TabViewController.swift in Sources */,
+				28DC1D591C75B67B00E5813E /* VehiclesDetailViewController.swift in Sources */,
+				28DC1D481C75B5DE00E5813E /* PlanetTableViewCell.swift in Sources */,
 				28DC1D1C1C75AC5400E5813E /* FilmDetailsViewController.swift in Sources */,
+				28DC1D521C75B64A00E5813E /* PlanetsDetailsViewController.swift in Sources */,
 				28DC1D211C75AC6100E5813E /* PeopleTableViewCell.swift in Sources */,
+				28DC1D501C75B63400E5813E /* PeopleDetailsViewController.swift in Sources */,
+				28DC1D4E1C75B60700E5813E /* VehiclesTableViewCell.swift in Sources */,
 				28DC1D301C75AFB600E5813E /* VehiclesViewController.swift in Sources */,
 				28DC1D2E1C75AFB100E5813E /* StarshipsViewController.swift in Sources */,
 				28DC1D1E1C75AC5400E5813E /* FilmTableViewCell.swift in Sources */,

@@ -25,13 +25,16 @@ class FilmDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         // Data Initialization
-        print("\(self.navBar.items)")
         self.navBar.topItem?.title = film.title
         self.subtitleLabel.text = "Episode \(film.episodeID)"
         self.openingCrawlLabel.text = film.openingCrawl
         self.directorLabel.text = film.director
         self.producerLabel.text = film.producer
+      
+        // Reset the scroll view to the top
+        self.openingCrawlLabel.setContentOffset(CGPoint.zero, animated: false)
     }
+  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

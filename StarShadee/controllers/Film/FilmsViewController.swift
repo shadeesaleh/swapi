@@ -27,6 +27,8 @@ class FilmsViewController: UIViewController/*, UITableViewDataSource, UITableVie
         SWAPI.getFilmsWithCompletion({
             (result:SWResultSet!, error: NSError!) -> () in
             MRProgressOverlayView.dismissOverlayForView(self.view, animated: false)
+            print("results : \(result)")
+            print("items : \(result.items)")
             self.films = result.items
             self.tableView.reloadData()
         })
