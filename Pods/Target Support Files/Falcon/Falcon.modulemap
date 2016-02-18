@@ -1,0 +1,6 @@
+framework module Falcon {
+  umbrella header "Falcon-umbrella.h"
+
+  export *
+  module * { export * }
+}
