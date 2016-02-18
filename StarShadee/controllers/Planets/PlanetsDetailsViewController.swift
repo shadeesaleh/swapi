@@ -7,20 +7,37 @@
 //
 
 import UIKit
+import Falcon
 
 class PlanetsDetailsViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+  // MARK: - Properties
+  
+  @IBOutlet var navBar: UINavigationBar!
+  
+  var planet:SWPlanet = SWPlanet()
+  
+  // MARK: - Lifecycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
+    // Data Initialization
+    self.navBar.topItem?.title = planet.name
+    
+  }
+  
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  @IBAction func backToPlanetsPage(sender: AnyObject) {
+    
+    self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    
+  }
 
     /*
     // MARK: - Navigation

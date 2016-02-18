@@ -7,19 +7,49 @@
 //
 
 import UIKit
+import Falcon
 
 class VehiclesDetailViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+  // MARK: - Properties
+  
+//  @property (nonatomic, copy) NSString *name;
+//  @property (nonatomic, copy) NSString *model;
+//  @property (nonatomic, copy) NSString *vehicleClass;
+//  @property (nonatomic, copy) NSString *manufacturer;
+//  @property (nonatomic, copy) NSString *costInCredits;
+//  @property (nonatomic, copy) NSString *length;
+//  @property (nonatomic, copy) NSString *crew;
+//  @property (nonatomic, copy) NSString *passengers;
+//  @property (nonatomic, copy) NSString *maxAtmospheringSpeed;
+//  @property (nonatomic, copy) NSString *cargoCapacity;
+//  @property (nonatomic, copy) NSString *consumables;
+  
+  @IBOutlet var navBar: UINavigationBar!
+  
+  var vehicle:SWVehicle = SWVehicle()
+  
+  // MARK: - Lifecycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    // Data Initialization
+    self.navBar.topItem?.title = vehicle.name
+    
+  }
+  
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  @IBAction func backToVehiclesPage(sender: AnyObject) {
+    
+    self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    
+  }
     
 
     /*

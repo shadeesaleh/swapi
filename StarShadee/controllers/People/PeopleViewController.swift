@@ -26,8 +26,6 @@ class PeopleViewController: UIViewController {
       SWAPI.getPeopleWithCompletion({
         (result:SWResultSet!, error: NSError!) -> () in
         MRProgressOverlayView.dismissOverlayForView(self.view, animated: false)
-        print("results : \(result)")
-        print("items : \(result.items)")
         self.people = result.items
         self.tableView.reloadData()
       })

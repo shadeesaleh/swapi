@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import Falcon
 
 class SpeciesDetailsViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+  // MARK: - Properties
+  
+  @IBOutlet var navBar: UINavigationBar!
+  
+  var specie:SWSpecies = SWSpecies()
+  
+  // MARK: - Lifecycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    // Data Initialization
+    self.navBar.topItem?.title = specie.name
+    
+  }
+  
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  @IBAction func backToSpeciesPage(sender: AnyObject) {
+    
+    self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    
+  }
     
 
     /*

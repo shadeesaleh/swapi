@@ -9,16 +9,27 @@
 import UIKit
 
 class PlanetTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+  
+  @IBOutlet weak var nameLabel: UILabel!
+  @IBOutlet weak var subheadingLabel: UILabel!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    // Initialization code
+  }
+  
+  override func setSelected(selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+    
+    // Configure the view for the selected state
+  }
+  
+  class func nib()->UINib{
+    return UINib(nibName: PlanetTableViewCell.reuseIdentifier() , bundle: nil)
+  }
+  
+  class func reuseIdentifier()->String{
+    return "\(PlanetTableViewCell.self)"
+  }
 
 }

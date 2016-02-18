@@ -37,7 +37,7 @@ class TabViewController: UITabBarController {
     let vehiclesVC = VehiclesViewController()
     
     // include in the tabs
-    let viewControllers:[UIViewController] = [ peopleVC, filmsVC, starshipsVC,vehiclesVC, planetsVC, speciesVC]
+    let viewControllers:[UIViewController] = [ planetsVC, starshipsVC, peopleVC, filmsVC, speciesVC]
     self.setViewControllers(viewControllers, animated: true)
     
     // Tab Bar Iteams for the View Controllers
