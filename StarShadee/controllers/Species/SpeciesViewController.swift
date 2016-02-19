@@ -60,6 +60,7 @@ class SpeciesViewController: UIViewController {
     print("\(specie.name)")
     
     cell.nameLabel.text = specie.name
+    cell.subheadingLabel.text = specie.classification
     
     return cell;
   }

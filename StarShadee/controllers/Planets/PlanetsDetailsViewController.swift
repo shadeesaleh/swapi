@@ -12,6 +12,14 @@ import Falcon
 class PlanetsDetailsViewController: UIViewController {
   
   // MARK: - Properties
+  @IBOutlet var diameterLabel: UILabel!
+  @IBOutlet var rotationPeriodLabel: UILabel!
+  @IBOutlet var orbitalPeriodLabel: UILabel!
+  @IBOutlet var gravityLabel: UILabel!
+  @IBOutlet var populationLabel: UILabel!
+  @IBOutlet var climateLabel: UILabel!
+  @IBOutlet var terrainLabel: UILabel!
+  @IBOutlet var surfaceWaterLabel: UILabel!
   
   @IBOutlet var navBar: UINavigationBar!
   
@@ -23,6 +31,14 @@ class PlanetsDetailsViewController: UIViewController {
     
     // Data Initialization
     self.navBar.topItem?.title = planet.name
+    self.diameterLabel.text = planet.diameter
+    self.rotationPeriodLabel.text = planet.rotationPeriod
+    self.orbitalPeriodLabel.text = planet.orbitalPeriod
+    self.gravityLabel.text = planet.gravity
+    self.populationLabel.text = planet.population
+    self.climateLabel.text = planet.climate
+    self.terrainLabel.text = planet.terrain
+    self.surfaceWaterLabel.text = planet.surfaceWater
     
   }
   

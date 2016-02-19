@@ -14,6 +14,7 @@ class StarshipsViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
+  
   var starships:[AnyObject] = []
   
   override func viewDidLoad() {
@@ -35,10 +36,6 @@ class StarshipsViewController: UIViewController {
     // Register Table Cells
     tableView.registerNib(StarshipsTableViewCell.nib(), forCellReuseIdentifier: StarshipsTableViewCell.reuseIdentifier())
     
-  }
-  
-  override func viewWillAppear(animated: Bool) {
-    <#code#>
   }
   
   override func didReceiveMemoryWarning() {
@@ -64,6 +61,7 @@ class StarshipsViewController: UIViewController {
     print("\(starship.name)")
     
     cell.nameLabel.text = starship.name
+    cell.subheadingLabel.text = starship.starshipClass
     
     return cell;
   }

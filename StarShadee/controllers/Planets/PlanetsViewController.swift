@@ -57,9 +57,8 @@ class PlanetsViewController: UIViewController {
     
     let planet = planets[row] as! SWPlanet
     
-    print("\(planet.name)")
-    
     cell.nameLabel.text = planet.name
+    cell.subheadingLabel.text = planet.orbitalPeriod
     
     return cell;
   }

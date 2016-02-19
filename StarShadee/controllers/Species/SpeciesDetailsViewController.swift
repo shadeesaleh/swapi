@@ -11,7 +11,17 @@ import Falcon
 
 class SpeciesDetailsViewController: UIViewController {
   
-  // MARK: - Properties
+  // MARK: - Properties  
+  @IBOutlet var classificationLabel: UILabel!
+  @IBOutlet var designationLabel: UILabel!
+  @IBOutlet var averageHeightLabel: UILabel!
+  @IBOutlet var averageLifespanLabel: UILabel!
+  @IBOutlet var eyeColorsLabel: UILabel!
+  @IBOutlet var hairColorsLabel: UILabel!
+  @IBOutlet var skinColorsLabel: UILabel!
+  @IBOutlet var languageLabel: UILabel!
+  @IBOutlet var homeWorldLabel: UILabel!
+  
   
   @IBOutlet var navBar: UINavigationBar!
   
@@ -23,6 +33,15 @@ class SpeciesDetailsViewController: UIViewController {
     
     // Data Initialization
     self.navBar.topItem?.title = specie.name
+    self.classificationLabel.text = specie.classification
+    self.designationLabel.text = specie.designation
+    self.averageHeightLabel.text = specie.averageHeight
+    self.averageLifespanLabel.text = specie.averageLifespan
+    self.eyeColorsLabel.text = specie.eyeColors
+    self.hairColorsLabel.text = specie.hairColors
+    self.skinColorsLabel.text = specie.skinColors
+    self.languageLabel.text = specie.language
+    self.homeWorldLabel.text = specie.homeworld
     
   }
   
