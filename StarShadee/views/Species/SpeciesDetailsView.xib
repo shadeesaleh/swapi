@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpeciesDetailsViewController" customModule="StarShadee" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="avE-hY-etC" id="0tl-a2-KOw"/>
                 <outlet property="averageHeightLabel" destination="z0W-X0-pkR" id="4ZN-yu-Yxz"/>
                 <outlet property="averageLifespanLabel" destination="40W-cA-aEb" id="ne4-ms-NsB"/>
                 <outlet property="classificationLabel" destination="1bz-vR-42u" id="9sU-Si-qmc"/>
@@ -25,6 +26,9 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="avE-hY-etC">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANq-kJ-a63">
                     <rect key="frame" x="0.0" y="10" width="600" height="44"/>
                     <constraints>
@@ -224,10 +228,12 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="zFa-e2-h3K" secondAttribute="trailing" id="5Nh-vR-rwy"/>
                 <constraint firstItem="ANq-kJ-a63" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Sep-yV-5lL"/>
+                <constraint firstItem="avE-hY-etC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Th7-au-nXR"/>
                 <constraint firstItem="zFa-e2-h3K" firstAttribute="top" secondItem="ANq-kJ-a63" secondAttribute="bottom" constant="20" id="dkf-nD-3Iz"/>
                 <constraint firstItem="ANq-kJ-a63" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gKp-A2-fbf"/>
                 <constraint firstItem="zFa-e2-h3K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mV8-JR-Yp3"/>
                 <constraint firstAttribute="trailing" secondItem="ANq-kJ-a63" secondAttribute="trailing" id="wLg-Zd-viA"/>
+                <constraint firstItem="avE-hY-etC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wbP-AC-J5v"/>
             </constraints>
         </view>
     </objects>

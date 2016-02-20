@@ -7,26 +7,27 @@
 //
 
 import UIKit
-import MRProgress
 import Falcon
 
-class FilmsViewController: UIViewController/*, UITableViewDataSource, UITableViewDelegate */{
+class FilmsViewController: UIViewController{
   
     
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   var films:[AnyObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        MRProgressOverlayView.showOverlayAddedTo(self.view, animated: true)
+      
+        activityIndicator.startAnimating()
       
         // Retrieve data
         SWAPI.getFilmsWithCompletion({
             (result:SWResultSet!, error: NSError!) -> () in
-            MRProgressOverlayView.dismissOverlayForView(self.view, animated: false)
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.hidden = true
+          
             self.films = result.items
             self.tableView.reloadData()
         })

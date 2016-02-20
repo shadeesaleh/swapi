@@ -13,19 +13,21 @@ import Falcon
 class PeopleViewController: UIViewController {
   
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var people:[AnyObject] = []
     
     override func viewDidLoad() {
       super.viewDidLoad()
       
-      // Do any additional setup after loading the view.
-      MRProgressOverlayView.showOverlayAddedTo(self.view, animated: true)
+      activityIndicator.startAnimating()
       
       // Retrieve data
       SWAPI.getPeopleWithCompletion({
         (result:SWResultSet!, error: NSError!) -> () in
-        MRProgressOverlayView.dismissOverlayForView(self.view, animated: false)
+        self.activityIndicator.stopAnimating()
+        self.activityIndicator.hidden = true
+        
         self.people = result.items
         self.tableView.reloadData()
       })

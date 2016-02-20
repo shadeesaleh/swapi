@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PeopleViewController" customModule="StarShadee" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="Kka-V2-nca" id="vXh-L0-xRT"/>
                 <outlet property="tableView" destination="MxC-lg-VQs" id="1Ci-UE-gXb"/>
                 <outlet property="view" destination="azn-w3-5SD" id="RWb-am-5TD"/>
             </connections>
@@ -23,13 +24,18 @@
                         <outlet property="delegate" destination="-1" id="RT3-29-Pec"/>
                     </connections>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Kka-V2-nca">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Kka-V2-nca" firstAttribute="centerX" secondItem="azn-w3-5SD" secondAttribute="centerX" id="Ggi-mm-mWV"/>
                 <constraint firstAttribute="bottom" secondItem="MxC-lg-VQs" secondAttribute="bottom" id="HmF-XL-Sbf"/>
                 <constraint firstAttribute="trailing" secondItem="MxC-lg-VQs" secondAttribute="trailing" id="Lyp-tu-xN8"/>
                 <constraint firstItem="MxC-lg-VQs" firstAttribute="leading" secondItem="azn-w3-5SD" secondAttribute="leading" id="POD-ZO-2Df"/>
                 <constraint firstItem="MxC-lg-VQs" firstAttribute="top" secondItem="azn-w3-5SD" secondAttribute="top" constant="20" id="cDx-RP-xQA"/>
+                <constraint firstItem="Kka-V2-nca" firstAttribute="centerY" secondItem="azn-w3-5SD" secondAttribute="centerY" id="nWc-aQ-aNd"/>
             </constraints>
             <point key="canvasLocation" x="266" y="345"/>
         </view>

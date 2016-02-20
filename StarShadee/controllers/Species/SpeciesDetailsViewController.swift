@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MRProgress
 import Falcon
 
 class SpeciesDetailsViewController: UIViewController {
@@ -25,6 +24,7 @@ class SpeciesDetailsViewController: UIViewController {
   
   
   @IBOutlet var navBar: UINavigationBar!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   var specie:SWSpecies = SWSpecies()
   var homeworld:SWPlanet? = nil
@@ -32,7 +32,7 @@ class SpeciesDetailsViewController: UIViewController {
   // MARK: - Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    MRProgressOverlayView.showOverlayAddedTo(self.view, animated: false)
+    activityIndicator.startAnimating()
     
     // Data Initialization
     self.navBar.topItem?.title = specie.name
@@ -48,26 +48,16 @@ class SpeciesDetailsViewController: UIViewController {
     
 
     specie.getHomeworldWithCompletion({(result:SWResultSet!, error: NSError!) -> () in
-          MRProgressOverlayView.dismissOverlayForView(self.view, animated: false)
-          print("results : \(result)")
-          print("items : \(result.items)")
+          self.activityIndicator.stopAnimating()
+          self.activityIndicator.hidden = true
+
           if result.items.count > 0{
               self.homeworld = result.items[0] as! SWPlanet
               self.homeWorldLabel.text = self.homeworld!.name
           }else{
               self.homeWorldLabel.text = "n/a"
           }
-//          self.species = result.items
-//          self.tableView.reloadData()
     })
-//    @property (nonatomic, copy) NSString *homeworld;
-//    @property (nonatomic, copy) NSArray *people;
-//    @property (nonatomic, copy) NSArray *films;
-//    
-//    - (void)getHomeworldWithCompletion:(SWCompletionBlock)completion;
-//    - (void)getPeopleWithCompletion:(SWCompletionBlock)completion;
-//    - (void)getFilmsWithCompletion:(SWCompletionBlock)completion;
-    
   }
   
   

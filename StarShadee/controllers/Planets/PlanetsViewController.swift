@@ -13,19 +13,21 @@ import Falcon
 class PlanetsViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet var activityIndicator: UIActivityIndicatorView!
   
   var planets:[AnyObject] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
-    MRProgressOverlayView.showOverlayAddedTo(self.view, animated: true)
+    activityIndicator.startAnimating()
     
     // Retrieve data
     SWAPI.getPlanetsWithCompletion({
       (result:SWResultSet!, error: NSError!) -> () in
-      MRProgressOverlayView.dismissOverlayForView(self.view, animated: false)
+      self.activityIndicator.stopAnimating()
+      self.activityIndicator.hidden = true
+      
       print("results : \(result)")
       print("items : \(result.items)")
       self.planets = result.items

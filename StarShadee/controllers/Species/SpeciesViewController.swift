@@ -13,21 +13,20 @@ import Falcon
 class SpeciesViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   var species:[AnyObject] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
-    MRProgressOverlayView.showOverlayAddedTo(self.view, animated: true)
+    activityIndicator.startAnimating()
     
     // Retrieve data
     SWAPI.getSpeciesWithCompletion({
       (result:SWResultSet!, error: NSError!) -> () in
-      MRProgressOverlayView.dismissOverlayForView(self.view, animated: false)
-      print("results : \(result)")
-      print("items : \(result.items)")
+      self.activityIndicator.stopAnimating()
+      self.activityIndicator.hidden = true
       self.species = result.items
       self.tableView.reloadData()
     })

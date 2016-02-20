@@ -13,6 +13,7 @@ import Falcon
 class StarshipsViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   
   var starships:[AnyObject] = []
@@ -20,13 +21,14 @@ class StarshipsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
-    MRProgressOverlayView.showOverlayAddedTo(self.view, animated: true)
+    activityIndicator.startAnimating()
     
     // Retrieve data
     SWAPI.getStarshipsWithCompletion({
       (result:SWResultSet!, error: NSError!) -> () in
-      MRProgressOverlayView.dismissAllOverlaysForView(self.view, animated: false)
+      self.activityIndicator.stopAnimating()
+      self.activityIndicator.hidden = true
+      
       print("results : \(result)")
       print("items : \(result.items)")
       self.starships = result.items
