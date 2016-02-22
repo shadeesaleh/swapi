@@ -52,7 +52,7 @@ class SpeciesDetailsViewController: UIViewController {
           self.activityIndicator.hidden = true
 
           if result.items.count > 0{
-              self.homeworld = result.items[0] as! SWPlanet
+              self.homeworld = result.items[0] as? SWPlanet
               self.homeWorldLabel.text = self.homeworld!.name
           }else{
               self.homeWorldLabel.text = "n/a"

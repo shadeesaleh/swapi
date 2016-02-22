@@ -36,7 +36,7 @@
                     </constraints>
                     <items>
                         <navigationItem title="Title" id="u3D-Vm-fWi">
-                            <barButtonItem key="leftBarButtonItem" title="&lt; Species" style="plain" id="cC5-uq-tDB">
+                            <barButtonItem key="leftBarButtonItem" title="&lt; Species" id="cC5-uq-tDB">
                                 <connections>
                                     <action selector="backToSpeciesPage:" destination="-1" id="Tao-3f-3lN"/>
                                 </connections>

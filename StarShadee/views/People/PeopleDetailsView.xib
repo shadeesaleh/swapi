@@ -31,7 +31,7 @@
                     </constraints>
                     <items>
                         <navigationItem title="Title" id="u3D-Vm-fWi">
-                            <barButtonItem key="leftBarButtonItem" title="&lt; Characters" style="plain" id="cC5-uq-tDB">
+                            <barButtonItem key="leftBarButtonItem" title="&lt; Characters" id="cC5-uq-tDB">
                                 <connections>
                                     <action selector="backToPeoplePage:" destination="-1" id="bRK-9g-rhC"/>
                                 </connections>

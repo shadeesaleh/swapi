@@ -35,7 +35,7 @@
                     </constraints>
                     <items>
                         <navigationItem title="Title" id="u3D-Vm-fWi">
-                            <barButtonItem key="leftBarButtonItem" title="&lt; Starships" style="plain" id="cC5-uq-tDB">
+                            <barButtonItem key="leftBarButtonItem" title="&lt; Starships" id="cC5-uq-tDB">
                                 <connections>
                                     <action selector="backToSpeciesPage:" destination="-1" id="0c7-Mk-iB7"/>
                                 </connections>

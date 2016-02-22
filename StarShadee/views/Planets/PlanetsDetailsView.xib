@@ -31,7 +31,7 @@
                     </constraints>
                     <items>
                         <navigationItem title="Title" id="u3D-Vm-fWi">
-                            <barButtonItem key="leftBarButtonItem" title="&lt; Planets" style="plain" id="cC5-uq-tDB">
+                            <barButtonItem key="leftBarButtonItem" title="&lt; Planets" id="cC5-uq-tDB">
                                 <connections>
                                     <action selector="backToPlanetsPage:" destination="-1" id="bE9-Ch-n5n"/>
                                 </connections>

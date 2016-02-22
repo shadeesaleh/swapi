@@ -34,7 +34,6 @@ class TabViewController: UITabBarController {
     let planetsVC = PlanetsViewController()
     let speciesVC = SpeciesViewController()
     let starshipsVC = StarshipsViewController()
-    let vehiclesVC = VehiclesViewController()
     
     // include in the tabs
     let viewControllers:[UIViewController] = [ planetsVC, starshipsVC, peopleVC, filmsVC, speciesVC]
@@ -46,7 +45,6 @@ class TabViewController: UITabBarController {
     planetsVC.tabBarItem = UITabBarItem(title: "Planets", image: UIImage(named:"tab_planets"), selectedImage: UIImage(named:"tab_planets"))
     speciesVC.tabBarItem = UITabBarItem(title: "Species", image: UIImage(named:"tab_species"), selectedImage: UIImage(named:"tab_species"))
     starshipsVC.tabBarItem = UITabBarItem(title: "Starships", image: UIImage(named:"tab_starships"), selectedImage: UIImage(named:"tab_starships"))
-    vehiclesVC.tabBarItem = UITabBarItem(title: "Vehicles", image: UIImage(named:"tab_vehicles"), selectedImage: UIImage(named:"tab_vehicles"))
   }
 
   

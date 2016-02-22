@@ -37,7 +37,7 @@
                     </constraints>
                     <items>
                         <navigationItem title="Title" id="u3D-Vm-fWi">
-                            <barButtonItem key="leftBarButtonItem" title="&lt; Films" style="plain" id="cC5-uq-tDB">
+                            <barButtonItem key="leftBarButtonItem" title="&lt; Films" id="cC5-uq-tDB">
                                 <connections>
                                     <action selector="backToFilmsPage:" destination="-1" id="90g-34-Mas"/>
                                 </connections>
